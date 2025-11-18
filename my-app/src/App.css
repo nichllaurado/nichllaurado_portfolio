@@ -1,38 +1,174 @@
-.App {
+:root {
+  --bg: #050816;
+  --card-bg: #0b1020;
+  --accent: #2563eb;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Sticky header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(5, 8, 22, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+/* Sections */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+/* Top / hero */
+
+.top-section {
+  padding: 5rem 0 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-tagline {
+  margin-top: 0.5rem;
+  color: var(--muted);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Generic sections */
+
+.section {
+  padding: 2.5rem 0;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Cards */
+
+.card {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.card-subtitle {
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.card ul {
+  padding-left: 1.25rem;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+/* Contact buttons */
+
+.contact-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--accent);
   color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  opacity: 0.9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-outline {
+  background: transparent;
+  border-color: var(--accent);
+}
+
+/* Footer */
+
+.footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.3);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
