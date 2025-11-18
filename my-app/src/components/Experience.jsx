@@ -1,20 +1,21 @@
 
 const experiences = [
   {
-    role: "Software Engineering Intern",
-    company: "Company Name",
-    time: "Summer 2025",
+    role: "Lead Programmer",
+    company: "CareCheck Health",
+    time: "Oct 2025 - Present",
     bullets: [
-      "Built a full-stack feature using React and Node.js used by X+ users.",
-      "Improved API response time by ~Y% through query optimization.",
-      "Collaborated with designers and PMs to ship features on schedule.",
+      "Developed an AI medical bill analysis model with a team of fellow classmates with python and OpenAI API.",
+      "Built frontend components with Javascript and the React framework to deliver a responsive experience.",
+      "Maintained databases for patient and bill error data with Azure SQL.",
     ],
   },
   {
     role: "Research Assistant",
     company: "JHU Lab Name",
-    time: "2024 – Present",
+    time: "March 2023 - December 2024",
     bullets: [
+      "Programmed robotic models to replicate movement dynamics with 90% accuracy, applying quantitative analysis and algorithmic optimization.",
       "Implemented data processing pipelines in Python for robotics experiments.",
       "Analyzed and visualized experimental results using NumPy and Matplotlib.",
     ],

@@ -4,7 +4,7 @@ function Contact() {
       <h2>Contact</h2>
       <div className="contact-buttons">
         <a
-          href="https://www.linkedin.com/in/your-linkedin"
+          href="https://www.linkedin.com/in/nicholas-llaurado-3ab754257/"
           target="_blank"
           rel="noreferrer"
           className="btn"
@@ -12,7 +12,7 @@ function Contact() {
           LinkedIn
         </a>
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/nichllaurado"
           target="_blank"
           rel="noreferrer"
           className="btn"

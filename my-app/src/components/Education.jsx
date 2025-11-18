@@ -4,8 +4,8 @@ function Education() {
       <h2>Education</h2>
       <div className="card">
         <h3>Johns Hopkins University</h3>
-        <p><strong>Major:</strong> B.S. in Computer Science, Minor in Economics</p>
-        <p><strong>Clubs:</strong> [Club 1], [Club 2], [Club 3]</p>
+        <p><strong>Major:</strong> B.S. in Computer Science</p>
+        <p><strong>Clubs:</strong> Society of Hispanic Professinal Engineers, Volunteers for Medical Engineering, Brain Computer Interface Society</p>
       </div>
     </section>
   );
