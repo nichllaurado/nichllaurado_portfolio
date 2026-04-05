@@ -12,7 +12,7 @@ const experiences = [
   },
   {
     role: "Research Assistant",
-    company: "JHU Lab Name",
+    company: "JHU LCSR",
     time: "March 2023 - December 2024",
     bullets: [
       "Programmed robotic models to replicate movement dynamics with 90% accuracy, applying quantitative analysis and algorithmic optimization.",
